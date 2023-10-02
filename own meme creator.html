@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripton" content="sravani's first project">
+    <title>Sony Meme Generator</title>
+    <style>
+        body{
+            background: linear-gradient(45deg, black,blue,black);
+            height: 200%;
+        }
+        .meme-generator {
+            margin: 20px auto;
+            width: 400px;
+            font-family: cursive;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        .meme-generator label {
+            display:block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+            font-family: cursive;
+            border-radius: 10px;
+        }
+        .meme-generator input {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        #meme {
+            width:100%;
+        }
+        button{
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        button:hover{
+            background-color: blueviolet;
+            font-weight: bold;
+            color: antiquewhite;
+        }
+        h1,h3{
+            text-align: center;
+            color: lightcyan
+        }
+    </style>
+</head>
+<body>
+    <h1>LaughBuilder</h1>
+    <h3>Creating Memes, One Chuckle at a Time!</h3>
+    <div class="meme-generator">
+        <label>Select an Image</label>
+        <input type="file" id="imageFileInput">
+        <label>Top Text</label>
+        <input type="text" id="topTextInput">
+        <label>Bottom Text</label>
+        <input type="text" id="bottomTextInput">
+        <button id="downloadButton">Download Meme</button>
+
+        <canvas id="meme"></canvas>
+    </div>
+    <script src="javamain.js"></script>
+</body>
+</html>
